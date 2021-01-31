@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>bmovie</title>
+</head>
+<body>
+    <p>test </p>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+           $.ajax({
+               url:"https://api.themoviedb.org/3/movie/550?api_key=c73af41dbfa25d4274259ccdc10bcb74",
+               type:"GET",
+               success:function(data){
+                   console.log(data)
+               }
+           })
+        });
+    </script>
+</body>
+</html>
